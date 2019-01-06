@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<npc name="villager001">
+  <event name="test">
+    <dialog type="tree" id="1.1">
+      <text>Welcome traveler!</text>
+      <option id="1" goto="2.1">>></option>
+    </dialog>
+
+    <dialog type="tree" id="2.1">
+      <text>What brings ye to these parts?</text>
+      <option id="1" goto="3.1">I am a mercenary seeking a contract.</option>
+      <option id="2" goto="3.2">I am a merchant with some goods to trade!</option>
+      <option id="3" goto="3.3">I am a scholar in wizardry in search of greater knowledge in the magic arts.</option>
+    </dialog>
+
+    <dialog type="tree" id="3.1">
+      <text>A mercenary? Perhaps ye would be interested in speakin' with the farmer on the yonder side of town.</text>
+      <option id="1" goto="4.1">What for?</option>
+      <option id="2" goto="4.2">Will do.</option>
+    </dialog>
+
+    <dialog type="tree" id="3.2">
+      <text>Ah, yer lookin' to trade? The town market south from here is yer best bet then!</text>
+      <option id="1" goto="5.1">I'll be on my way.</option>
+      <option id="2" goto="4.2">Thanks a lot, stranger!</option>
+    </dialog>
+
+    <dialog type="tree" id="3.3">
+      <text>Magic? What are ye, some sort of looney?</text>
+      <option id="1" goto="6.1">Excuse you! I may be a scholar but I know my way with a tome. Don't mess with me. </option>
+      <option id="2" goto="5.1">Uh, sorry... I'll be on my way.</option>
+      <option id="3" goto="6.2">(cast a flame spell to show dominance)</option>
+
+    </dialog>
+
+    <dialog type="tree" id="4.1">
+      <text>He's been suspectin' some no-do-gooders of stealin' his crop. Ye probably might not get a good fight, but maybe ye might find somethin' interestin' there.</text>
+      <option id="1" goto="5.1">On second thought, I'll seek my business elsewhere.</option>
+      <option id="2" goto="4.2">A petty thief? What lack of honor! I must speak with the farmer at once!</option>
+    </dialog>
+
+    <dialog type="end" id="4.2">
+      <text>Good luck, traveler!</text>
+      <exit>0</exit>
+    </dialog>
+
+    <dialog type="end" id="5.1">
+      <text>Farewell</text>
+      <exit>0</exit>
+    </dialog>
+
+    <dialog type="tree" id="6.1">
+      <text>Get yer looney-ass crazy-talk outta here! Guards!</text>
+      <option id="1" goto="6.2">(cast a flame spell to show dominance)</option>
+    </dialog>
+
+    <dialog type="end" id="6.2">
+      <text>Ah! Fire! Get away from me ye crazy!</text>
+      <exit>0</exit>
+    </dialog>
+  </event>
+</npc>
